@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://127.0.0.1:5000/api",
+    baseURL: "https://code-craft-ai-jet.vercel.app/",
     headers: {
         "Content-Type": "application/json"
     }
