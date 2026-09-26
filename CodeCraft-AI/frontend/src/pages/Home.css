@@ -1,0 +1,122 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2.5rem 0 4rem;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+    gap: 2.25rem;
+  }
+}
+
+.hero-copy h1 {
+  font-size: 2.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--teal);
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+}
+
+.hero-description {
+  max-width: 46ch;
+  color: var(--text-secondary);
+  margin-bottom: 1.9rem;
+  font-size: 1rem;
+}
+
+/* Hero demo card ---------------------------------------------------------*/
+
+.hero-demo-body {
+  background: var(--bg-editor);
+  padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.hero-demo-prompt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dashed var(--border-soft);
+}
+
+.hero-demo-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  margin-bottom: 0.3rem;
+}
+
+.hero-demo-code {
+  font-family: var(--font-mono);
+  font-size: 0.83rem;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+
+.tok-def {
+  color: var(--amber-strong);
+}
+
+.tok-key {
+  color: #c98bdb;
+}
+
+.tok-string {
+  color: var(--teal);
+}
+
+.tok-comment {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* Feature cards ------------------------------------------------------- */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.feature-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.5rem;
+  transition: border-color 0.15s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--amber);
+}
+
+.feature-glyph {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--amber);
+  margin-bottom: 0.9rem;
+}
+
+.feature-card h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.89rem;
+}

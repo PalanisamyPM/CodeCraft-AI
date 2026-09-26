@@ -1,0 +1,169 @@
+.app-shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 2.5rem 1.75rem 4rem;
+}
+
+/* Buttons ------------------------------------------------------------- */
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: #1a1206;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--amber-strong);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-large {
+  padding: 0.95rem 2.1rem;
+  font-size: 1.02rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  border-color: var(--amber);
+  color: var(--text-primary);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-ghost.danger:hover:not(:disabled) {
+  border-color: var(--coral);
+  color: var(--coral);
+}
+
+/* Panels ---------------------------------------------------------------- */
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.panel h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1.1rem;
+}
+
+.empty-state {
+  color: var(--text-faint);
+  text-align: center;
+  padding: 2.75rem 1rem;
+  font-size: 0.92rem;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.error-message {
+  color: var(--coral);
+  font-size: 0.88rem;
+  margin: 0.6rem 0;
+}
+
+.explanation-box {
+  margin-top: 1.4rem;
+  padding: 1.2rem 1.3rem;
+  background: var(--bg-raised);
+  border-left: 2px solid var(--teal);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.explanation-box h3 {
+  font-size: 0.95rem;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.explanation-box p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+/* Shared "editor window" chrome — used by CodeBox and the homepage demo. */
+
+.editor-frame {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.editor-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red {
+  background: var(--coral);
+}
+
+.dot-yellow {
+  background: var(--yellow-dot);
+}
+
+.dot-green {
+  background: var(--green-dot);
+}
+
+.editor-filename {
+  margin-left: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+.language-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.18rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
